@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity"
+    android:padding="10dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="CALCULATE"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:background="#52FE1F"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#FCFE7A">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_margin="10dp"
+            android:padding="10dp">
+            <TextView
+                android:id="@+id/tva"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="a "
+                android:textSize="20sp"
+                android:layout_marginRight="10dp"
+                />
+            <EditText
+                android:id="@+id/edit_a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:inputType="numberDecimal"
+                android:ems="10"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_margin="10dp"
+            android:padding="10dp">
+            <TextView
+                android:id="@+id/tvb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="b "
+                android:textSize="20sp"
+                android:layout_marginRight="10dp"/>
+            <EditText
+                android:id="@+id/edit_b"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                android:ems="10"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_result"
+            android:onClick="onClickCalculation"
+            android:background="#67FE1B"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text=" Solution "
+            android:gravity="center"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:background="#FCFE7A">
+            <Button
+                android:id="@+id/btn_calculate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="sum"
+                android:textColor="#ff00"
+                android:background="#171DFE"
+                android:gravity="center"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
